@@ -107,11 +107,11 @@
 		81E34DD32846723100125C96 /* Movie-List-Without-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				81E34E042846858000125C96 /* Model */,
+				81E34E052846858800125C96 /* View */,
+				81E34E062846859000125C96 /* ViewModel */,
 				81E34E14284691AA00125C96 /* Helper */,
 				81E34E0F2846875800125C96 /* Network */,
-				81E34E062846859000125C96 /* ViewModel */,
-				81E34E052846858800125C96 /* View */,
-				81E34E042846858000125C96 /* Model */,
 				81E34DD42846723100125C96 /* AppDelegate.swift */,
 				81E34DDD2846723600125C96 /* Assets.xcassets */,
 				81E34DDF2846723600125C96 /* LaunchScreen.storyboard */,
