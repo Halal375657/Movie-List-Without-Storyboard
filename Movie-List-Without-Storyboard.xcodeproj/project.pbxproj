@@ -10,7 +10,6 @@
 		81E34DD52846723100125C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E34DD42846723100125C96 /* AppDelegate.swift */; };
 		81E34DD92846723100125C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E34DD82846723100125C96 /* ViewController.swift */; };
 		81E34DDE2846723600125C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E34DDD2846723600125C96 /* Assets.xcassets */; };
-		81E34DE12846723600125C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E34DDF2846723600125C96 /* LaunchScreen.storyboard */; };
 		81E34DEC2846723600125C96 /* Movie_List_Without_StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E34DEB2846723600125C96 /* Movie_List_Without_StoryboardTests.swift */; };
 		81E34DF62846723600125C96 /* Movie_List_Without_StoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E34DF52846723600125C96 /* Movie_List_Without_StoryboardUITests.swift */; };
 		81E34DF82846723600125C96 /* Movie_List_Without_StoryboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E34DF72846723600125C96 /* Movie_List_Without_StoryboardUITestsLaunchTests.swift */; };
@@ -44,7 +43,6 @@
 		81E34DD42846723100125C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E34DD82846723100125C96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81E34DDD2846723600125C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		81E34DE02846723600125C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81E34DE22846723600125C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81E34DE72846723600125C96 /* Movie-List-Without-StoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie-List-Without-StoryboardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E34DEB2846723600125C96 /* Movie_List_Without_StoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_List_Without_StoryboardTests.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				81E34E0F2846875800125C96 /* Network */,
 				81E34DD42846723100125C96 /* AppDelegate.swift */,
 				81E34DDD2846723600125C96 /* Assets.xcassets */,
-				81E34DDF2846723600125C96 /* LaunchScreen.storyboard */,
 				81E34DE22846723600125C96 /* Info.plist */,
 			);
 			path = "Movie-List-Without-Storyboard";
@@ -299,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E34DE12846723600125C96 /* LaunchScreen.storyboard in Resources */,
 				81E34DDE2846723600125C96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,17 +363,6 @@
 			targetProxy = 81E34DF22846723600125C96 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		81E34DDF2846723600125C96 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81E34DE02846723600125C96 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		81E34DF92846723600125C96 /* Debug */ = {
