@@ -28,6 +28,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.accessibilityIdentifier = "MoveTableView"
     }
     
     override func loadView() {
