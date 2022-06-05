@@ -20,12 +20,18 @@ extension UIImageView {
             return
         }
         
-        DispatchQueue.main.async { [weak self] in
+        /**
+         we use background thread for handle the blocking the Main Thread. it's increase the user experiences.
+         */
+        DispatchQueue.global(qos: .background).async { [ weak self ] in
+            guard let self = self else { return }
             if let imageData = try? Data(contentsOf: url) {
                 if let loadedImage = UIImage(data: imageData) {
-                        self?.image = loadedImage
+                    DispatchQueue.main.async {
+                        self.image = loadedImage
+                    }
                 }
             }
         }
-    }
+    } /// end the `loadFrom(.....)` method
 }

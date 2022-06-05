@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     // MARK: - Properties
     private let tableView : UITableView = {
         let tableView = UITableView()
+        tableView.backgroundColor = .white
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -48,11 +49,8 @@ class ViewController: UIViewController {
         tableView.register(MovieInfoTableViewCell.self, forCellReuseIdentifier: MovieInfoTableViewCell.reuseIdentifier)
         
         tableView.topAnchor.constraint(equalTo: safeArea.topAnchor).isActive = true
-        
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
     }
