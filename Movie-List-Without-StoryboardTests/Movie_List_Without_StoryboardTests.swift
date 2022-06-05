@@ -12,7 +12,7 @@ class Movie_List_Without_StoryboardTests: XCTestCase {
 
     override func setUpWithError() throws {
     }
- 
+
     func testExample() throws {
        
     }

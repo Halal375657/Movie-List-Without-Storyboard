@@ -23,8 +23,6 @@ class ViewController: UIViewController {
         
     // The restManager handle all of the network action
     var restManager = RestManager()
-    // The table view cell
-    var cellId = "cell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +45,7 @@ class ViewController: UIViewController {
     
         tableView.dataSource = self
     
-        tableView.register(MovieInfoTableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(MovieInfoTableViewCell.self, forCellReuseIdentifier: MovieInfoTableViewCell.reuseIdentifier)
         
         tableView.topAnchor.constraint(equalTo: safeArea.topAnchor).isActive = true
         
@@ -59,7 +57,7 @@ class ViewController: UIViewController {
         
     }
     
-    /// get the movie info.
+    /// get the movie info as data-sourse of movie `tableview`.
     func loadMovieInfo() {
         guard let url = URL(string: Api.movie) else { return }
         
@@ -91,7 +89,9 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MovieInfoTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MovieInfoTableViewCell.reuseIdentifier, for: indexPath) as? MovieInfoTableViewCell else {
+            fatalError("Unable to Dequeue  Movie Info Table View Cell")
+        }
         cell.movie = MovieViewModel(result: movieInfoList[indexPath.row])
         return cell
     }
