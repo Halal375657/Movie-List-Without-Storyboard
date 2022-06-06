@@ -21,8 +21,12 @@ class MovieInfoTableViewCell: UITableViewCell {
         }
     }
     
-    public static let reuseIdentifier = "cellId"
+    //MARK: Static Properties
+    public static var reuseIdentifier: String {
+            return String(describing: self)
+    }
     
+    //MARK: - Properties
     private let titleLabel : UILabel = {
         let lbl = UILabel()
         lbl.textColor = .black

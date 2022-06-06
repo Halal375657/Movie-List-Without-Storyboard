@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81566560284D9B5E00DA542A /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8156655F284D9B5E00DA542A /* Extension+UIImage.swift */; };
 		81E34DD52846723100125C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E34DD42846723100125C96 /* AppDelegate.swift */; };
 		81E34DD92846723100125C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E34DD82846723100125C96 /* ViewController.swift */; };
 		81E34DDE2846723600125C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E34DDD2846723600125C96 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8156655F284D9B5E00DA542A /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		81E34DD12846723100125C96 /* Movie-List-Without-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-List-Without-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E34DD42846723100125C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E34DD82846723100125C96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				81E34E192846A9CA00125C96 /* Extension+UIImageView.swift */,
+				8156655F284D9B5E00DA542A /* Extension+UIImage.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				81E34DD52846723100125C96 /* AppDelegate.swift in Sources */,
 				81E34E1328468B0600125C96 /* Link.swift in Sources */,
 				81E34E0A284685E500125C96 /* Movie.swift in Sources */,
+				81566560284D9B5E00DA542A /* Extension+UIImage.swift in Sources */,
 				81E34E18284692DD00125C96 /* MovieInfoTableViewCell.swift in Sources */,
 				81E34E0D2846861400125C96 /* MovieViewModel.swift in Sources */,
 			);
